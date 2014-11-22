@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="res/css/bootstrap.min.css" rel="stylesheet">
+<link href="res/css/index.css" rel="stylesheet">
+<script type="text/javascript" src="res/js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	var width = screen.width,
+        height = screen.height;
+	if(width/height == 1.6)
+	{
+		$(".front-card").css("height","35%");
+	}
+});
+</script>
+<title>学籍管理系统</title>
+</head>
+<body>
+<div class="global-nav">
+<nav id="HeadBar" class="navbar navbar-default navbar-fixed-top" role="navigation" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+		<img id="logoImg" src="res/img/logo.png">
+		<a id="HeadLine" class="navbar-brand" href="#">课程管理系统</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="right: 200%;">帮助/联系我们</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="front-bg">
+      <img class="front-image" src="res/img/13.jpg">
+</div>
+<div class="front-card">
+	<div class="front-welcome">
+		<div class="front-welcome-text">
+			<p id="welcomeText"> 欢迎来到学籍管理系统。</p>
+			<p id="welcomeText2">获取最新的课程信息，了解自己的成绩，选择适合自己的课程与知识。</p>
+		</div>
+		<div class="front-welcome-addinfo">
+			<p>@2014WebDevPJ 陈悠 范殊文 瞿鹏亮 张高铭 Web软件开发技术</p>
+		</div>
+	</div>
+	<div class="front-signin">
+		<div class="front-signin-box">
+			<!--<input class="text-input" id="usernameBox" type="text" placeholder="学号、工号或者用户名" autocomplete="on">-->
+			<!--<div class="input-group input-group-lg">-->
+			<div class="input-box">
+				<p> 系统登录</p>
+				<input type="text" id="usernameBox" class="form-control" placeholder="学号、工号或者用户名">
+				<input type="text" id="passwordBox" class="form-control" placeholder="密码">
+				<button type="button" id="loginBtn" class="btn btn-primary ">登录</button>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
