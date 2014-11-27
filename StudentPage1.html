@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="res/css/bootstrap.min.css" rel="stylesheet">
+<link href="res/css/studentpage1.css" rel="stylesheet">
+<script type="text/javascript" src="res/js/jquery.min.js"></script>
+<script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+//$("input.form-control").attr("readonly",false);
+});
+</script>
+<title>学籍管理系统</title>
+</head>
+<body>
+	<nav id="HeadBar" class="navbar navbar-default navbar-fixed-top" role="navigation" >
+	  <div class="container-fluid">
+		<div class="navbar-header">
+			<img id="logoImg" src="res/img/logo.png">
+			<a id="HeadLine" class="navbar-brand" href="#">课程管理系统</a>
+		</div>
+		<div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+        <li class="active"><a href="#">学生信息</a></li>
+        <li><a href="#">学生选课</a></li>
+		<li><a href="#">成绩查询</a></li>
+		</ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a style="right: 200%;font-size: 1.0vw;">陈悠，您好！</a></li>
+			<li><a style="right: 430%; color: rgb(10, 122, 209);font-size: 1.0vw;">登出</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	<div class="front-bg">
+		  <img class="front-image" src="res/img/13.jpg">
+	</div>
+	<div class="front">
+		<div class="front-card">
+			<div class="upperPart">
+				<div class="upperText">
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon">姓名</span>
+						<input type="text" class="form-control" readonly="true" value="陈悠">
+					</div>	
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon">学号</span>
+						<input type="text" class="form-control" readonly="true" value="14210240066">
+					</div>	
+					<br>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon">年级</span>
+						<input type="text" class="form-control" readonly="true" value="2014级">
+					</div>	
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon">班级</span>
+						<input type="text" class="form-control" readonly="true" value="02班">
+					</div>	
+					<br>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon">年龄</span>
+						<input type="text" class="form-control" readonly="true" value="22岁">
+					</div>	
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon">籍贯</span>
+						<input type="text" class="form-control" readonly="true" value="湖北武汉">
+					</div>
+				</div>
+				<div class="upperImg">
+					<img src="res/img/sampleUserImg.jpg">		
+				</div>
+			</div>
+
+			<div class="lowerPart">
+				<div class="input-group input-group-lg">
+						<span class="input-group-addon">手机号</span>
+						<input type="text" class="form-control" readonly="true" value="18571604157">
+						<span class="input-group-btn">
+							<button class="btn btn-danger" type="button">修改</button>
+						</span>
+				</div>	
+				<div class="input-group input-group-lg">
+					<span class="input-group-addon">邮箱</span>
+					<input type="text" class="form-control" readonly="true" value="chenyou.fdu@gmail.com">
+					<span class="input-group-btn">
+							<button class="btn btn-danger" type="button">修改</button>
+					</span>
+				</div>
+				<br>
+				<div class="input-group input-group-lg">
+						<span class="input-group-addon">QQ号</span>
+						<input type="text" class="form-control" readonly="true" value="522263650">
+						<span class="input-group-btn">
+							<button class="btn btn-danger" type="button">修改</button>
+						</span>
+				</div>	
+				<div class="input-group input-group-lg">
+					<span class="input-group-addon">宿舍号</span>
+					<input type="text" class="form-control" readonly="true" value="23幢28号407室">
+					<span class="input-group-btn">
+							<button class="btn btn-danger" type="button">修改</button>
+					</span>
+				</div>	
+			</div>
+			<div class="BtnPart">
+				<button type="button" id="submitBtn" class="btn btn-primary btn-lg">提交</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!--<img src="res/img/sampleUserImg.jpg">-->
+<!--<div class="input-group">
+					<input type="text" class="form-control">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">Go!</button>
+					</span>
+				</div>-->
