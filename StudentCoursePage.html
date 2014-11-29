@@ -39,21 +39,85 @@ $(document).ready(function(){
 	</div>
 	<div class="front">
 		<div class="front-card">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>课程号</th>
-                        <th>课程名称</th>
-                        <th>学分</th>
-                        <th>类型</th>
-                        <th>教师</th>
-                        <th>授课地点</th>
-                        <th>授课时间</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+            <div class="front-card-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>课程号</th>
+                            <th>课程名称</th>
+                            <th>学分</th>
+                            <th>类型</th>
+                            <th>教师</th>
+                            <th>授课地点</th>
+                            <th>授课时间</th>
+                            <th>选课</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="unselectedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><button type="button" class="btn btn-primary">选课</button></td>
+                        </tr>
+                        <tr class="unselectedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><button type="button" class="btn btn-primary">选课</button></td>
+                        </tr>
+                        <tr class="unselectedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><button type="button" class="btn btn-primary">选课</button></td>
+                        </tr>
+                        <tr class="selectedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><button type="button" class="btn btn-danger">退课</button></td>
+                        </tr>
+                        <tr class="selectedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><button type="button" class="btn btn-danger">退课</button></td>
+                        </tr>
+                        <tr class="unselectedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><button type="button" class="btn btn-primary">选课</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" id="submitBtn" class="btn btn-success">提交修改</button>
+            </div>
 		</div>
 	</div>
 </body>

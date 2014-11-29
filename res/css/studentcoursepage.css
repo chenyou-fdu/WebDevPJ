@@ -22,15 +22,35 @@ position: relative;
 width: 1024px;
 height: 100%;
 margin: 0 auto;
+padding-top: 5.5%;
 }
-.front-card .table {
-    position: absolute;
-    top:10%;
+.front-card-table {
+    position: relative;
+    height: 100%;
+    margin:0 auto;
     width: 80%;
-    left: 10%;
 }
 .front-card .table th {
     text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+.front-card .table td {
+    text-align:center;
+    vertical-align: middle;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(139,139,139);
+}
+.front-card .table .unselectedCourse {
+    color: rgb(0, 2, 39);
+}
+.front-card .table .selectedCourse {
+    color: rgb(197, 60, 56);
+}
+.front-card-table #submitBtn {
+    margin-left: 85%;
+    font-size: 18px;
 }
 #HeadBar
 {
