@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="res/css/bootstrap.min.css" rel="stylesheet">
+<link href="res/css/studentgradepage.css" rel="stylesheet">
+<script type="text/javascript" src="res/js/jquery.min.js"></script>
+<script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+//$("input.form-control").attr("readonly",false);
+});
+</script>
+<title>学籍管理系统</title>
+</head>
+<body>
+	<nav id="HeadBar" class="navbar navbar-default navbar-fixed-top" role="navigation" >
+	  <div class="container-fluid">
+		<div class="navbar-header">
+			<img id="logoImg" src="res/img/logo.png">
+			<a id="HeadLine" class="navbar-brand" href="#">课程管理系统</a>
+		</div>
+		<div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+        <li><a href="#">学生信息</a></li>
+        <li><a href="#">学生选课</a></li>
+		<li class="active"><a href="#">成绩查询</a></li>
+		</ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a style="right: 200%;font-size: 1.0vw;">陈悠，您好！</a></li>
+			<li><a style="right: 430%; color: rgb(10, 122, 209);font-size: 1.0vw;">登出</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	<div class="front-bg">
+		  <img class="front-image" src="res/img/13.jpg">
+	</div>
+	<div class="front">
+		<div class="front-card">
+            <div class="front-card-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>课程号</th>
+                            <th>课程名称</th>
+                            <th>学分</th>
+                            <th>类型</th>
+                            <th>教师</th>
+                            <th>授课地点</th>
+                            <th>授课时间</th>
+                            <th>成绩</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="ungradedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><span class="label label-default">无成绩</span></td>
+                        </tr>
+                        <tr class="gradedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><span class="label label-danger">A</span></td>
+                        </tr>
+                        <tr class="ungradedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><span class="label label-default">无成绩</span></td>
+                        </tr>
+                        <tr class="gradedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><span class="label label-danger">A&nbsp;-</span></td>
+                        </tr>
+                        <tr class="gradedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><span class="label label-danger">A</span></td>
+                        </tr>
+                        <tr class="ungradedCourse">
+                            <td>001</td>
+                            <td>机器学习</td>
+                            <td>2</td>
+                            <td>选修</td>
+                            <td>吴恩达</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+                            <td><span class="label label-default">无成绩</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+		</div>
+	</div>
+</body>
+</html>

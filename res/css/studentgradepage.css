@@ -1,0 +1,68 @@
+body {
+height: 100vh;
+}
+.front-bg {
+position: fixed;
+width: 200%;
+height: 200%;
+z-index: -1;
+}
+.front-bg img{
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
+}
+.front {
+width: 100%;
+height: 100%;
+}
+.front-card {
+background-color: rgba(255, 255, 255, 0.74);
+position: relative;
+width: 1024px;
+height: 100%;
+margin: 0 auto;
+padding-top: 5.5%;
+}
+.front-card-table {
+    position: relative;
+    height: 100%;
+    margin:0 auto;
+    width: 80%;
+}
+.front-card .table th {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+.front-card .table td {
+    text-align:center;
+    vertical-align: middle;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(139,139,139);
+    height: 60px;
+}
+.front-card .table .ungradedCourse {
+    color: rgb(121, 121, 121);
+}
+.front-card .table span{
+    font-size: 18px;
+    width: 63px;
+}
+.front-card .table .selectedCourse {
+    color: rgb(197, 60, 56);
+}
+
+#HeadBar
+{
+box-shadow: 0px 1px 8px rgba(92, 92, 92, 0.53); 
+border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+padding-left: 15%;
+}
+#logoImg{
+width: 32px;
+height: 32px;
+float: left;
+margin: 10px;
+}
