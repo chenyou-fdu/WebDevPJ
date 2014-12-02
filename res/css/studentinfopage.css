@@ -76,7 +76,7 @@ color:rgb(6, 128, 218);
 }
 
 .lowerPart {
-top: 430px;
+top: 410px;
 position: absolute;
 width: 100%;
 }
@@ -85,7 +85,7 @@ width: 100%;
 float: left;
 width: 40%;
 margin-left: 70px;
-margin-bottom: 40px;
+margin-bottom: 35px;
 
 }
 
@@ -95,7 +95,7 @@ color:rgb(165, 0, 0);
 
 .BtnPart {
 position: absolute;
-top: 615px;
+top: 565px;
 width: 39%;
 margin-left: 620px;
 visibility: visible;/* hidden; */
