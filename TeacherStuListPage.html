@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="res/css/bootstrap.min.css" rel="stylesheet">
-<link href="res/css/studentgradepage.css" rel="stylesheet">
+<link href="res/css/teacherstulistpage.css" rel="stylesheet">
 <script type="text/javascript" src="res/js/jquery.min.js"></script>
 <script type="text/javascript" src="res/js/bootstrap.min.js"></script>
 <script>
@@ -40,13 +40,16 @@ $(document).ready(function(){
 	</div>
 	<div class="front">
 		<div class="front-card">
+            <div class="front-card-coursename">
+                <p>机器学习</p>
+                <button type="button" class="btn btn-success">成绩录入</button>
+            </div>
             <div class="front-card-table">
                 <table class="table">
                     <thead>
                         <tr>
                             <th>学号</th>
                             <th>姓名</th>
-                            <th>性别</th>
                             <th>学院</th>
                             <th>年级</th>
                             <th>班级</th>
@@ -55,100 +58,109 @@ $(document).ready(function(){
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="ungradedCourse">
-                            <td>001</td>
-                            <td>机器学习</td>
-                            <td>2</td>
-                            <td>选修</td>
-                            <td>吴恩达</td>
-                            <td>二教2105</td>
-                            <td>周二下午1-2节</td>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou.text@gmail.com</td>
                             <td><span class="label label-default">无成绩</span></td>
                         </tr>
-                        <tr class="gradedCourse">
-                            <td>001</td>
-                            <td>机器学习</td>
-                            <td>2</td>
-                            <td>选修</td>
-                            <td>吴恩达</td>
-                            <td>二教2105</td>
-                            <td>chenyou.test@gmail.com</td>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou.text@gmail.com</td>
+                            <td><span class="label label-default">无成绩</span></td>
+                        </tr>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou.text@gmail.com</td>
+                            <td><span class="label label-danger">A -</span></td>
+                        </tr>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou.text@gmail.com</td>
                             <td><span class="label label-danger">A</span></td>
                         </tr>
-                        <tr class="ungradedCourse">
-                            <td>001</td>
-                            <td>机器学习</td>
-                            <td>2</td>
-                            <td>选修</td>
-                            <td>吴恩达</td>
-                            <td>二教2105</td>
-                            <td>周二下午1-2节</td>
-                            <td><span class="label label-default">无成绩</span></td>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou.text@gmail.com</td>
+                            <td><span class="label label-danger">B -</span></td>
                         </tr>
-                        <tr class="gradedCourse">
-                            <td>001</td>
-                            <td>机器学习</td>
-                            <td>2</td>
-                            <td>选修</td>
-                            <td>吴恩达</td>
-                            <td>二教2105</td>
-                            <td>周二下午1-2节</td>
-                            <td><span class="label label-danger">A&nbsp;-</span></td>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou.text@gmail.com</td>
+                            <td><span class="label label-danger">C</span></td>
                         </tr>
-                        <tr class="gradedCourse">
-                            <td>001</td>
-                            <td>机器学习</td>
-                            <td>2</td>
-                            <td>选修</td>
-                            <td>吴恩达</td>
-                            <td>二教2105</td>
-                            <td>周二下午1-2节</td>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou.text@gmail.com</td>
+                            <td><span class="label label-danger">A -</span></td>
+                        </tr>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou.text@gmail.com</td>
                             <td><span class="label label-danger">A</span></td>
                         </tr>
-                        <tr class="ungradedCourse">
-                            <td>001</td>
-                            <td>机器学习</td>
-                            <td>2</td>
-                            <td>选修</td>
-                            <td>吴恩达</td>
-                            <td>二教2105</td>
-                            <td>周二下午1-2节</td>
-                            <td><span class="label label-default">无成绩</span></td>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou.text@gmail.com</td>
+                            <td><span class="label label-danger">B -</span></td>
                         </tr>
-						<tr class="ungradedCourse">
-                            <td>001</td>
-                            <td>机器学习</td>
-                            <td>2</td>
-                            <td>选修</td>
-                            <td>吴恩达</td>
-                            <td>二教2105</td>
-                            <td>周二下午1-2节</td>
-                            <td><span class="label label-default">无成绩</span></td>
-                        </tr>
-						<tr class="ungradedCourse">
-                            <td>001</td>
-                            <td>机器学习</td>
-                            <td>2</td>
-                            <td>选修</td>
-                            <td>吴恩达</td>
-                            <td>二教2105</td>
-                            <td>周二下午1-2节</td>
-                            <td><span class="label label-default">无成绩</span></td>
-                        </tr>
-						<tr class="ungradedCourse">
-                            <td>001</td>
-                            <td>机器学习</td>
-                            <td>2</td>
-                            <td>选修</td>
-                            <td>吴恩达</td>
-                            <td>二教2105</td>
-                            <td>周二下午1-2节</td>
-                            <td><span class="label label-default">无成绩</span></td>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou.text@gmail.com</td>
+                            <td><span class="label label-danger">C</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-		</div>
-	</div>
+            <div class="front-card-pageNum">
+<nav>
+  <ul class="pager">
+    <li id="preBtn"><a href="#">Previous</a></li>
+	<span>1</span>
+    <li id="nextBtn"><a href="#">Next</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

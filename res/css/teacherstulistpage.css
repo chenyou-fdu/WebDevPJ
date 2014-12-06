@@ -2,33 +2,48 @@ body {
 height: 100vh;
 }
 .front-bg {
-position: fixed;
-width: 200%;
-height: 200%;
-z-index: -1;
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
 }
 .front-bg img{
-	margin: auto;
-	min-width: 50%;
-	min-height: 50%;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
 }
 .front {
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .front-card {
-background-color: rgba(255, 255, 255, 0.74);
-position: relative;
-width: 1024px;
-height: 100%;
-margin: 0 auto;
-padding-top: 90px;
+    background-color: rgba(255, 255, 255, 0.74);
+    position: relative;
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 90px;
 }
 .front-card-table {
     position: relative;
-    height: 100%;
+    /* height: 100%; */
     margin:0 auto;
     width: 80%;
+}
+.front-card-coursename{
+    margin:0 auto;
+    width: 80%;
+}
+.front-card-coursename p{
+    font-size: 50px;
+    color: rgb(2, 83, 94);
+    float:left;
+}
+.front-card-coursename button{
+    margin-top: 13px;
+    margin-left: 62%;
+    width: 110px;
+    font-size: 20px;
 }
 .front-card .table th {
     text-align: center;
@@ -43,26 +58,35 @@ padding-top: 90px;
     border-bottom: 1px solid rgb(139,139,139);
     height: 60px;
 }
-.front-card .table .ungradedCourse {
-    color: rgb(121, 121, 121);
-}
 .front-card .table span{
     font-size: 18px;
     width: 63px;
 }
-.front-card .table .selectedCourse {
-    color: rgb(197, 60, 56);
+.front-card .pageNum {
+    width: 80%;
+    margin: 0 auto;
 }
-
+.pager li>a {
+    width: 90px;
+}
+.pager span {
+    font-size: 20px;
+}
 #HeadBar
 {
-box-shadow: 0px 1px 8px rgba(92, 92, 92, 0.53); 
-border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-padding-left: 15%;
+    box-shadow: 0px 1px 8px rgba(92, 92, 92, 0.53); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-left: 15%;
 }
 #logoImg{
-width: 32px;
-height: 32px;
-float: left;
-margin: 10px;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 10px;
+}
+#preBtn {
+    margin-right:25px;
+}
+#nextBtn {
+    margin-left:25px;
 }
