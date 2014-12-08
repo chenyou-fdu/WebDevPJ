@@ -41,16 +41,16 @@ height: 71px;
     font-size: 50px;
     color: rgb(2, 83, 94);
 }
-.searchBox .form-group{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.searchBox #upForm{
+    margin-top: 20px;
 }
-.front-card-coursename button{
-    margin-top: 13px;
-    margin-left: 62%;
-    width: 110px;
-    font-size: 20px;
+.searchBox #downForm{
+    margin-bottom: 20px;
 }
+.searchBox #upLeftForm {
+	float: left;
+	margin-right: 60px;
+	}
 .front-card .table th {
     text-align: center;
     vertical-align: middle;

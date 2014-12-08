@@ -53,24 +53,26 @@
                     </div>
                     <div class="searchBox">
                         <form class="form-inline" role="form">
-                            <div class="form-group">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 按学号搜索
+                            <div id="upForm">
+							<div id="upLeftForm">
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineCheckbox1" value="option1"> 按学号搜索
                                 </label>
                                 <input class="form-control" id="exampleInputEmail1" placeholder="输入学号">
                                 <button class="btn btn-default">搜索</button>
-                            </div>
-                            <div class="form-group">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 按姓名搜索
+								</div>
+								<div id="upRightForm">
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineCheckbox2" value="option2"> 按姓名搜索
                                 </label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="输入姓名">
                                 <button type="submit" class="btn btn-default">搜索</button>
+								</div>
                             </div>
-                        </form>
-                        <form class="form-inline" role="form">
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="inlineCheckbox1" value="option1"> 按学院班级搜索 
+							<br>
+							<div id="downForm">
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineCheckbox1" value="option1"> 按学院班级搜索 
                             </label>
                             <select class="form-control">
                                 <option>请选择学院</option>
@@ -82,6 +84,7 @@
                                 <input class="form-control" id="exampleInputEmail1" placeholder="输入年级（e.g. 2014级）">
                                 <input class="form-control" id="exampleInputEmail1" placeholder="输入班级（e.g. 1班）">
                                 <button type="submit" class="btn btn-default">搜索</button>
+								</div>
                         </form>
                     </div>
                 </div>
