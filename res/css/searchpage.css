@@ -49,8 +49,18 @@ height: 71px;
 }
 .searchBox #upLeftForm {
 	float: left;
-	margin-right: 60px;
+	margin-right: 160px;
 	}
+.searchBox #addTeacherBtn {
+	margin-left: 232px;
+	width: 100px;
+	}
+.searchBox #addStuBtn {
+	margin-left: 11px;
+	}
+.front-card .table tbody {
+border-bottom: 2px solid black;
+}
 .front-card .table th {
     text-align: center;
     vertical-align: middle;
