@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="res/css/bootstrap.min.css" rel="stylesheet">
+<link href="res/css/teacherstulistpage.css" rel="stylesheet">
+<script type="text/javascript" src="res/js/jquery.min.js"></script>
+<script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+//$("input.form-control").attr("readonly",false);
+	var h = $(document).height();
+	$(".front").css("height",h+"px");
+});
+</script>
+<title>学籍管理系统</title>
+</head>
+<body>
+	<nav id="HeadBar" class="navbar navbar-default navbar-fixed-top" role="navigation" >
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img id="logoImg" src="res/img/logo.png">
+                    <a id="HeadLine" class="navbar-brand" href="#">课程管理系统</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- <li><a href="#">信息修改</a></li> -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">基本信息管理<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">学生信息</a></li>
+                                <li><a href="#">教师信息</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#">课程信息管理</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a style="right: 200%;font-size: 1.0vw;">陈悠<span class="loginClass">管理员</span>，您好！</a></li>
+                        <li><a style="right: 430%; color: rgb(10, 122, 209);font-size: 1.0vw;">登出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	<div class="front-bg">
+		  <img class="front-image" src="res/img/backgroundImg.jpg">
+	</div>
+	<div class="front">
+		<div class="front-card">
+            <div class="front-card-coursename">
+                <p>机器学习</p>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-Target="#addNewTeachingModel">添加学生</button>
+            </div>
+            <div class="front-card-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>学号</th>
+                            <th>姓名</th>
+                            <th>学院</th>
+                            <th>年级</th>
+                            <th>班级</th>
+                            <th>电子邮件</th>
+                            <th>成绩</th>
+							<th>信息修改</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>14210240066</td>
+                            <td>陈悠</td>
+                            <td>计算机学院</td>
+                            <td>2014级</td>
+                            <td>02班</td>
+                            <td>chenyou@gmail.com</td>
+                            <td><span class="label label-default">无成绩</span></td>
+							<td>
+                                <button type="button" class="btn btn-danger">删除</button>
+							</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="front-card-pageNum">
+<nav>
+  <ul class="pager">
+    <li id="preBtn"><a href="#">上一页</a></li>
+	<span>1</span>
+    <li id="nextBtn"><a href="#">下一页</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+    </div>
+	        <div class="modal fade" id="addNewTeachingModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">添加授课信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form">
+                            <div id="newCourseModel" class="form-group">
+                                <label for="newCourseName" class="col-sm-2 control-label">学号</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="newCourseName" placeholder="请输入学号">
+                                </div>
+                                <label for="newCourseName" class="col-sm-2 control-label">学生姓名</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="newCourseName" placeholder="请输入学生姓名">
+                                </div>
+                                <label for="newCourseName" class="col-sm-2 control-label">学院</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="newCourseName" placeholder="请输入学院">
+                                </div>
+                                <label for="newCourseName" class="col-sm-2 control-label">年级</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="newCourseName" placeholder="请输入年级">
+                                </div>
+								<label for="newCourseName" class="col-sm-2 control-label">班级</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="newCourseName" placeholder="请输入班级">
+                                </div>
+								<label for="newCourseName" class="col-sm-2 control-label">电子邮件</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="newCourseName" placeholder="请输入电子邮件">
+                                </div>
+								<label for="newCourseName" class="col-sm-2 control-label">成绩</label>
+                                <div class="col-sm-9">
+                                <select class="form-control">
+									<option>请选择成绩</option>
+									<option>A</option>
+									<option>A-</option>
+									<option>B</option>
+									<option>B-</option>
+								</select>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

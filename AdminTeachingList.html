@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="res/css/bootstrap.min.css" rel="stylesheet">
+<link href="res/css/teacherstulistpage.css" rel="stylesheet">
+<script type="text/javascript" src="res/js/jquery.min.js"></script>
+<script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+//$("input.form-control").attr("readonly",false);
+	var h = $(document).height();
+	$(".front").css("height",h+"px");
+});
+</script>
+<title>学籍管理系统</title>
+</head>
+<body>
+	<nav id="HeadBar" class="navbar navbar-default navbar-fixed-top" role="navigation" >
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img id="logoImg" src="res/img/logo.png">
+                    <a id="HeadLine" class="navbar-brand" href="#">课程管理系统</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- <li><a href="#">信息修改</a></li> -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">基本信息管理<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">学生信息</a></li>
+                                <li><a href="#">教师信息</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#">课程信息管理</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a style="right: 200%;font-size: 1.0vw;">陈悠<span class="loginClass">管理员</span>，您好！</a></li>
+                        <li><a style="right: 430%; color: rgb(10, 122, 209);font-size: 1.0vw;">登出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	<div class="front-bg">
+		  <img class="front-image" src="res/img/backgroundImg.jpg">
+	</div>
+	<div class="front">
+		<div class="front-card">
+            <div class="front-card-coursename">
+                <p>机器学习</p>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-Target="#addNewTeachingModel">添加</button>
+            </div>
+            <div class="front-card-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+							<th>授课号</th>
+                            <th>教师工号</th>
+                            <th>教师姓名</th>
+                            <th>授课地点</th>
+                            <th>授课时间</th>
+                            <th>信息修改</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>112345</td>
+                            <td>麦基</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+							<td>
+							<button type="button" class="btn btn-primary">查看选课</button>
+							<button type="button" class="btn btn-danger">删除</button>
+							</td>
+                        </tr>
+						<tr>
+                            <td>001</td>
+                            <td>112345</td>
+                            <td>麦基</td>
+                            <td>二教2105</td>
+                            <td>周二下午1-2节</td>
+							<td>
+							<button type="button" class="btn btn-primary">查看选课</button>
+							<button type="button" class="btn btn-danger">删除</button>
+							</td>
+                        </tr>
+						
+                    </tbody>
+                </table>
+            </div>
+            <div class="front-card-pageNum">
+<nav>
+  <ul class="pager">
+    <li id="preBtn"><a href="#">上一页</a></li>
+	<span>1</span>
+    <li id="nextBtn"><a href="#">下一页</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+    </div>
+	        <div class="modal fade" id="addNewTeachingModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">添加授课信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form">
+                            <div id="newCourseModel" class="form-group">
+                                <label for="newCourseName" class="col-sm-2 control-label">教师工号</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="newCourseName" placeholder="请输入教师工号">
+                                </div>
+                                <label for="newCourseName" class="col-sm-2 control-label">教师姓名</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="newCourseName" placeholder="请输入教师姓名">
+                                </div>
+                                <label for="newCourseName" class="col-sm-2 control-label">授课地点</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="newCourseName" placeholder="请输入授课地点">
+                                </div>
+                                <label for="newCourseName" class="col-sm-2 control-label">授课时间</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="newCourseName" placeholder="请输入授课时间">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
