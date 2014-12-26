@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="res/css/bootstrap.min.css" rel="stylesheet">
+<link href="res/css/teacherstulistpage.css" rel="stylesheet">
+<script type="text/javascript" src="res/js/jquery.min.js"></script>
+<script type="text/javascript" src="res/js/JQPlot/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+<script language="javascript" type="text/javascript" src="res/js/JQPlot/jquery.jqplot.min.js"></script>
+<link rel="stylesheet" type="text/css" href="res/css/jquery.jqplot.min.css" />
+<script language="javascript" type="text/javascript" src="res/js/JQPlot/jqplot.pieRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="res/js/JQPlot/jqplot.barRenderer.min.js"></script>
+<script type="text/javascript" src="res/js/JQPlot/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="res/js/JQPlot/jqplot.pointLabels.min.js"></script>
+<script>
+$(document).ready(function(){
+//$("input.form-control").attr("readonly",false);
+	var h = $(document).height();
+	$(".front").css("height",h+"px");
+var data = [
+    ['A ', 12],['B+', 9], ['B', 14], 
+    ['C+', 16],['C', 7], ['D', 9]
+  ];
+  var ticks = [ 'A','B+','B','C+','C','D'];
+  var range = [ 12,9,14,16,7,9];
+  
+   var piechartPlot = $.jqplot('piechart', [data], {
+        grid: {
+            drawBorder: false, 
+            drawGridlines: false,
+            background: 'transparent',
+            shadow:false
+        },
+        axesDefaults: {
+             
+        },
+		title: {
+			text: "学生成绩饼状图",
+			fontSize: '29px',
+			},
+        seriesDefaults:{
+            renderer:$.jqplot.PieRenderer,
+            rendererOptions: {
+				fill: false,
+				sliceMargin: 4,
+				lineWidth: 5,
+                showDataLabels: true
+            }
+        },
+        legend: {
+            show: true,
+			background: 'transparent',
+			fontSize: '16px',
+            rendererOptions: {
+				
+                numberRows: 1
+            },
+            location: 's'
+        }
+    }); 
+var plot1 = $.jqplot('barchart', [range], {
+            // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
+            animate: !$.jqplot.use_excanvas,
+			grid: {
+			background: 'transparent',
+			drawGridlines: false,
+			},
+			title: {
+			text: "学生成绩柱状图",
+			fontSize: '29px',
+			},
+            seriesDefaults:{
+                renderer:$.jqplot.BarRenderer,
+                pointLabels: { show: true }
+            },
+            axes: {
+                xaxis: {
+                    renderer: $.jqplot.CategoryAxisRenderer,
+                    ticks: ticks
+                }
+            },
+            highlighter: { show: false }
+        });
+
+});
+</script>
+<title>学籍管理系统</title>
+</head>
+<body>
+	<nav id="HeadBar" class="navbar navbar-default navbar-fixed-top" role="navigation" >
+	  <div class="container-fluid">
+		<div class="navbar-header">
+			<img id="logoImg" src="res/img/logo.png">
+			<a id="HeadLine" class="navbar-brand" href="#">课程管理系统</a>
+		</div>
+		<div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+        <li><a href="#">教师信息</a></li>
+		<li class="active"><a href="#">授课信息</a></li>
+		</ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a style="right: 200%;font-size: 1.0vw;">陈悠<span class="loginClass">老师</span>，您好！</a></li>
+			<li><a style="right: 430%; color: rgb(10, 122, 209);font-size: 1.0vw;">登出</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	<div class="front-bg">
+		  <img class="front-image" src="res/img/backgroundImg.jpg">
+	</div>
+	<div class="front">
+		<div class="front-card">
+            <div class="front-card-coursename">
+                <p>机器学习</p>
+                <button type="button" class="btn btn-success">返回</button>
+            </div>
+            <div class="front-card-table">
+				<div id="barchart" style="height: 500px; width: 600px; position: relative;" class="jqplot-target">
+				</div>
+				<div id="piechart" style="height: 500px; width: 600px; position: relative;" class="jqplot-target">
+				</div>
+
+        </div>
+    </div>
+</body>
+</html>
